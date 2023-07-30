@@ -1,0 +1,314 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, 'Roboto', sans-serif, Monospace;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    position: fixed;
+    width: 250px;
+    height: 100vh;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    background: orangered;
+    background: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+    border: 1px solid rgba(255, 255, 255, 0.86);
+}
+.hide {
+    visibility: hidden;
+}
+nav ul {
+    margin: 70px 0 16px;
+    list-style-type: none;
+}
+nav span {
+    color: #fff;
+    float: right;
+    margin: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+.header span {
+    margin-right: 20px;
+    padding: 0 15px;
+    border: 1px solid #fff;
+    border-radius: 5px;
+}
+@media screen and (min-width: 769px) {
+    .header span {
+        display: none;
+    }
+}
+nav a {
+    padding: 20px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+}
+.hover {
+    background-color: #fff;
+    color: #000;
+}
+nav a:hover {
+    background-color: #fff;
+    color: #000;
+}
+.background {
+    color: #000;
+    background-color: #f0f0f0;
+    width: 100%;
+    margin-top: 80px;
+}
+.header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+    color: #fff;
+    z-index: 1;
+}
+@media screen and (max-width: 1024px) {
+    .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 10px 30px 10px 0px;
+    }
+}
+.header .logo {
+    display: flex;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.header .logo a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.header img {
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px;
+}
+.header ul {
+    display: flex;
+    align-items: center;
+    margin: 0 50px 0 0;
+    padding: 0;
+    list-style-type: none;
+}
+.header ul a {
+    padding: 15px 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+@media screen and (max-width: 850px) {
+    .header ul a {
+        padding: 15px 15px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .header ul a {
+        display: none;
+    }
+    .header ul {
+        margin-right: 10px;
+    }
+}
+.header span {
+    font-size: 40px;
+    float: right;
+}
+.active {
+    color: orangered !important;
+}
+.background .body {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: left;
+    width: 100%;
+    align-items: center;
+}
+.background .body .row:nth-child(1) {
+    margin-left: 50px;
+    flex: 1 0 280px;
+    padding: 100px 30px;
+}
+.background .body .row:nth-child(2) {
+    flex: 2 0 280px;
+    padding: 100px 0;
+}
+.background .body .illustration img {
+    width: 90%;
+    margin-right: 0;
+    height: 50%;
+}
+.background .body h3 {
+    display: inline-block;
+    padding-bottom: 15px;
+    border-bottom: 3px solid orangered;
+}
+.background .body h1 {
+    font-size: 45px;
+    line-height: 1.3;
+    margin: 0 30px 50px 0;
+}
+@media screen and (max-width: 630px) {
+    .background .body .row:nth-child(1) {
+        text-align: center;
+    }
+    .background .body .row:nth-child(2) {
+        padding: 0 0 50px;
+        text-align: center;
+    }
+    .background .body h1 {
+        margin: 0 auto 30px;
+    }
+}
+@media screen and (max-width: 1024px) {
+    .background .body h1 {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 768px) {
+    .background .body h1 {
+        font-size: 30px;
+    }
+    .background .body .row:first-child {
+        margin-left: 10px;
+    }
+}
+.background .body .last {
+    margin: 30px 30px 60px 0;
+    font-size: 20px;
+    line-height: 30px;
+}
+.cta {
+    text-decoration: none;
+    background-color: orangered;
+    color: #fff;
+    padding: 20px 40px;
+    transition: all 0.5s ease 0s;
+}
+.cta:hover {
+    background-color: #000;
+    color: #fff;
+}
+.offer-card {
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+    width: 70%;
+    max-width: 1000px;
+    margin: 100px auto;
+}
+.offer-card .bg {
+    width: 100%;
+    height: 100%;
+    padding: 70px 10px 70px 60px;
+    background: rgba(0, 0, 0, 0.01) url('../PHOTOS/offer.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    transition: all 1s;
+}
+.offer-card .bg:hover {
+    transform: scale(1.1)
+}
+.offer-card h1 {
+    display: inline-block;
+    padding-bottom: 10px;
+    margin: 0;
+    border-bottom: 3px solid orangered;
+}
+.offer-card .bg p{
+    margin-bottom: 50px;
+    font-size: 25px;
+}
+@media screen and (max-width: 900px) {
+    .offer-card {
+        width: 90%;
+    }
+    .offer-card .bg {
+        padding: 40px 10px 40px 30px;
+    }
+    .offer-card .cta {
+        padding: 15px 30px;
+    }
+    .offer-card .bg p {
+        font-size: 16px;
+    }
+}
+.products {
+    margin: 100px 70px;
+}
+.products h1 {
+    font-size: 35px;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: 50px;
+    padding-bottom: 10px;
+    border-bottom: 5px solid orangered;
+}
+.products .row {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.products .card {
+    width: 280px;
+    cursor: pointer;
+}
+.products .img {
+    width: 100%;
+    padding-bottom: 100%;
+    position: relative;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+}
+.img img {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    width: 200px;
+    transition: all 1s;
+}
+.img img:hover {
+    transform: scale(1.2);
+}
+.products .cta-div {
+    width: 100%;
+    background-color: orangered;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+    transition: all 0.5s;
+}
+.products .cta-div:hover {
+    background-color: #000;
+}
+.products .title {
+    font-size: 20px;
+}
+.products .price {
+    color: orangered;
+    font-size: 20px;
+}

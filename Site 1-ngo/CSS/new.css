@@ -1,0 +1,494 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.background {
+    position: relative;
+    background: rgba(0,0,0,0.1) url('../Photos/blue-sky.webp');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    color: #fff;
+    width: 100%;
+    height: 100vh
+}
+.background .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+}
+@media screen and (max-width: 1024px) {
+    .background .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 0px;
+    }
+}
+.background .header .logo {
+    display: flex;
+    font-weight: bold;
+}
+.background .header .logo a {
+    text-decoration: none;
+    color: #fff;
+}
+.background .header img {
+    width: 30px;
+    height: 30px;
+    margin: 10px 20px;
+}
+.background ul {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+}
+.background ul a {
+    padding: 15px 20px 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+@media screen and (max-width: 768px) {
+    .background ul a {
+        padding: 10px 15px 5px;
+        font-weight: bold;
+        text-decoration: none;
+        color: #fff;
+    }
+}
+.active {
+    border-bottom: 5px solid #00ff00;
+}
+.background .body {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    width: 100%;
+    margin-top: 20px;
+}
+.background .body .row {
+    width: 50%;
+    padding: 20px;
+}
+.background .body img {
+    margin: 30px;
+    width: 90%;
+}
+@media screen and (max-width: 425px) {
+    .background .body .row {
+        width: 90%;
+    }
+    .background .body img {
+        display: none;
+    }
+    .background .body {
+        flex-direction: column;
+    }
+}
+.background .body h1 {
+    font-size: 65px;
+    margin: 0 30px 0 0;
+    font-weight: bold;
+}
+@media screen and (max-width: 1024px) {
+    .background .body h1 {
+    font-size: 40px;
+    font-weight: bold;
+    }
+}
+@media screen and (max-width: 768px) {
+    .background .body h1 {
+    font-size: 30px;
+    font-weight: bold;
+}
+}
+.background .body .last {
+    margin: 30px 30px 60px 0;
+    font-size: 20px;
+    line-height: 30px;
+}
+.cta {
+    text-decoration: none;
+    background-color: #00ff00;
+    color: #000;
+    padding: 20px 40px;
+    transition: all 0.5s ease 0s;
+    border-radius: 50px;
+    font-weight: bold;
+}
+.cta:hover {
+    background-color: #000;
+    color: #fff;
+}
+.section-1 h1 {
+    margin: 80px 0 30px;
+    text-align: center;
+    font-size: 45px;
+}
+.section-1 .sub-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+.section-1 .card {
+    margin: 20px;
+    position: relative;
+    width: 25%;
+    border-radius: 30px;
+    box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.2);
+}
+@media screen and (max-width: 768px) {
+    .section-1 .card {
+        width: 30%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .section-1 .sub-section {
+        flex-direction: column;
+    }
+    .section-1 .card {
+        width: 82%;
+        margin: 20px 40px;
+    }
+}
+.img-container {
+    position: relative;
+    padding-top: 50px;
+    width: 100%;
+    padding-bottom: 70%;
+}
+.img-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.section-1 .card .title {
+    padding: 20px;
+}
+.section-1 .card .title h2 {
+    letter-spacing: 1px;
+    margin-top: 0;
+}
+.section-1.card .title p {
+    letter-spacing: 1px;
+}
+.stretched-link::after{
+    position:absolute;
+    top:0;
+    right:0;
+    bottom:0;
+    left:0;
+    z-index:1;
+    pointer-events:auto;
+    content:"";
+    background-color:rgba(0,0,0,0)}
+.section-2 {
+    display: flex;
+    position: relative;
+    padding: 100px;
+    background-color: #6c63ff;
+    color: #fff;
+    align-items: center;
+    justify-content: center;
+}
+@media screen and (max-width: 768px) {
+    .section-2 {
+        padding: 100px 20px 100px 50px;
+    }
+}
+@media screen and (max-width: 425px) {
+    .section-2 {
+        padding: 100px 30px;
+    }
+}
+.section-2 .sub-section {
+    width: 50%;
+}
+@media screen and (max-width: 768px) {
+    .section-2 .sub-section:first-child {
+        width: 60%;
+    }
+    .section-2 .sub-section:last-child {
+        text-align: center;
+        width: 40%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .section-2 .sub-section:last-child {
+        display: none;
+    }
+    .section-2 .sub-section:first-child {
+        width: 100%;
+    }
+}
+.section-2 h1 {
+    font-size: 4rem;
+    margin-top: 0;
+}
+.section-2 .sub-section span:first-child::before {
+    content: "\2713";
+}
+.section-2 .sub-section span:last-child {
+    margin-left: 20px;
+}
+.section-2 .sub-section p {
+    display: flex;
+    font-size: 22px;
+}
+.section-2 .sub-section p:nth-last-child(2) {
+    margin-bottom: 60px;
+}
+@media screen and (max-width: 425px) {
+    .section-2 h1 {
+        font-size: 3rem;
+    }
+    .section-2 .sub-section p {
+        font-size: 20px;
+    }
+}
+.section-2 img {
+    width: 80%;
+}
+.section-3 {
+    position: relative;
+    background: rgba(0,0,0,0.5) url('../Photos/students.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    color: #fff;
+    width: 100%;
+    padding: 120px 0;
+    text-align: center
+}
+.section-3 h1 {
+    font-size: 70px;
+    margin: 0;
+}
+.section-3 p {
+    font-size: 30px;
+    margin-bottom: 70px;
+}
+@media screen and (max-width: 768px) {
+    .section-3 h1 {
+        margin: 50px;
+    }
+    .section-3 p {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+}
+.section-4 {
+    padding: 100px 60px;
+}
+@media screen and (max-width: 768px) {
+    .section-4 {
+        padding: 70px 10px;
+    }
+}
+.section-4 h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 60px;
+}
+.reviews {
+    display: flex;
+    flex-direction: row;
+}
+.section-4 .card {
+    padding: 20px;
+    width: 30%;
+    margin: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 3px 13px 0px rgba(0,0,0,0.1);
+}
+@media screen and (max-width: 425px) {
+    .reviews {
+        flex-direction: column;
+    }
+    .section-4 .card {
+        width: 80%;
+    }
+    .section-4 h1 {
+        font-size: 40px;
+    }
+}
+.section-4 .user {
+    display: flex;
+}
+.section-4 .meta {
+    display: block;
+    margin-left: 15px;
+}
+.section-4 p {
+    margin: 10px 0 0;
+    line-height: 23px;
+}
+.reviews img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+}
+.reviews h4 {
+    margin: 10px 0 0;
+}
+.ratings {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    color: #b1b1b1;
+    overflow: hidden;
+}
+
+.full-stars{
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: tomato;
+}
+.empty-stars:before,
+.full-stars:before {
+    content: "\2605\2605\2605\2605\2605";
+    font-size: 15pt;
+}
+.section-5 {
+    padding: 150px 50px;
+}
+.section-5 h1 {
+    font-size: 70px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+    .section-5 {
+        padding: 70px 0px;
+    }
+    .section-5 h1 {
+        font-size: 50px;
+        margin-bottom: 50px;
+    }
+}
+.section-5 .row {
+    display: flex;
+    flex-direction: row;
+}
+.section-5 .card {
+    width: 25%;
+    margin: 15px;
+    padding: 50px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+    .section-5 .card {
+        width: 36.5%;
+    }
+}
+@media screen and (max-width: 1062px) {
+    .section-5 {
+        padding: 70px 15px;
+    }
+    .section-5 .card {
+        width: 11.6%;
+    }
+}
+@media screen and (max-width: 997px) {
+    .section-5 .card {
+        flex-wrap: wrap;
+        width: 30%;
+    }
+}
+@media screen and (max-width: 425px) {
+    .section-5 {
+        padding: 70px 0px;
+    }
+    .section-5 .card {
+        width: 69%;
+    }
+    .section-5 .row {
+        flex-direction: column;
+        width: 100%;
+    }
+    .section-5 h1 {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .section-5 .card {
+        width: 66%;
+    }
+}
+.section-5 .card h2 {
+    margin: 0;
+}
+.section-5 .card p {
+    font-size: 60px;
+    margin: 30px 0 0;
+    font-weight: bold;
+}
+.section-5 .card-1 {
+    background-color: #6c63ff;
+    color: #fff;
+}
+.section-5 .card-2 {
+    background-color: #000;
+    color: #fff;
+}
+.section-5 .card-3 {
+    background-color: #00ff00;
+}
+.section-5 .card-4 {
+    background-color: #f80392;
+    color: #fff;
+}
+footer {
+    background-color: rgb(79, 79, 79);
+    color: #fff;
+    padding: 80px 80px 40px;
+}
+footer table {
+    width: 80%;
+    table-layout: fixed;
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 0 auto;
+}
+footer table th {
+    padding-bottom: 30px;
+    color: #00ff00;
+}
+footer table td {
+    padding-bottom: 20px;
+}
+@media screen and (max-width: 425px) {
+    footer {
+        padding: 80px 20px 20px;
+    }
+    footer table {
+        margin: 0;
+        width: 100%;
+    }
+    footer table td {
+        padding-bottom: 10px;
+    }
+}
+footer p {
+    text-align: center;
+    margin-top: 40px;
+}
+footer p a {
+    color: #fff;
+}

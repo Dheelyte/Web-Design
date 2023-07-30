@@ -1,0 +1,349 @@
+
+html {
+    background: url('../PHOTOS/party.avif') no-repeat center center fixed;
+    background-color: rgba(0,0,0,0.9);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, 'Roboto', sans-serif, Monospace;
+    color: #fff;
+    line-height: 1.5;    
+}
+div.header {
+    position: fixed;
+    top: 0;
+    display: flex;
+    height: 80px;
+    width: 100%;
+    color: #fff;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1;
+    background: rgba(255, 255, 255, 0.17);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+}
+div.header .logo {
+    display: flex;
+    align-items: center;
+}
+div.header img {
+    width: 50px;
+}
+div.header ul {
+    margin: 0;
+    padding: 0;
+}
+div.header ul a {
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+}
+.intro {
+    margin-top: 80px;
+    padding: 30px 15px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.intro .card {
+    flex: 1 0 300px;
+}
+.intro .card h1 {
+    font-size: 40px;
+    margin-bottom: 0;
+}
+.intro .card h2 {
+    color: orange;
+    margin-top: 0;
+    text-align: center;
+}
+.intro .card:first-child {
+    text-align: center;
+}
+.intro .card:first-child p {
+    margin-top: 0;
+    color: #d8d8d8;
+}
+.intro .card:nth-child(2) {
+    padding: 20px;
+}
+.intro .card:nth-child(2) p {
+    color: #d8d8d8;
+}
+@media screen and (max-width: 600px) {
+    .intro .card:nth-child(2) {
+        padding: 100px 20px 0;
+    }
+}
+.intro .card ul {
+    margin-bottom: 40px;
+    padding: 0;
+    justify-content: center;
+}
+.intro .card ul img, .intro .card ul svg {
+    width: 25px;
+    margin-right: 10px;
+    color: #fff;
+}
+.profile-img {
+    width: 280px;
+    padding-bottom: 280px;
+    position: relative;
+    margin: auto;
+}
+.profile-img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    outline: 2px solid orange;
+}
+.cta {
+    text-decoration: none;
+    background-color: rgb(255, 166, 0);
+    color: #000;
+    padding: 20px 40px;
+    transition: all 0.5s ease 0s;
+    border-radius: 50px;
+    font-weight: bold;
+}
+.cta:hover {
+    background-color: #000;
+    color: #fff;
+    outline: 2px solid #fff;
+}
+.events {
+    padding: 20px;
+}
+.events h1 {
+    text-align: center;
+    color: orange;
+    margin-bottom: 70px;
+}
+.events .row {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+.events .card {
+    position: relative;
+    padding: 10px;
+    width: 300px;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+    border: 1px solid rgba(255, 255, 255, 0.86);
+}
+.img {
+    width: 80%;
+    padding-bottom: 80%;
+    position: relative;
+    margin: auto;
+    margin-top: -40px;
+}
+.img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.events .card p {
+    font-size: 20px;
+    margin-bottom: 70px;
+    text-align: center;
+}
+.events .card .action {
+    text-align: center;
+    margin-bottom: 30px;
+}
+.events .card a {
+    text-align: center;
+    text-decoration: none;
+    padding: 10px 60px;
+    width: 80%;
+    background-color: #000;
+    color: #fff;
+    border-radius: 50px;
+    outline: 2px solid #fff;
+    transition: all 0.5s ease 0s;
+}
+.events .card a:hover {
+    background-color: orange;
+    outline: 2px solid orange;
+}
+.reviews {
+    padding: 30px;
+}
+.reviews h1 {
+    text-align: center;
+    color: orange;
+    margin-bottom: 50px;
+}
+.reviews .row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+.reviews .card {
+    flex: 1;
+    border-radius: 5px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+    border: 1px solid rgba(255, 255, 255, 0.86);
+}
+.reviews .user {
+    display: flex;
+}
+.reviews .meta {
+    display: block;
+    margin-left: 15px;
+}
+.reviews h4 {
+    margin: 0;
+}
+.reviews p {
+    margin: 10px 0 0;
+    line-height: 23px;
+}
+.reviews img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    outline: blueviolet solid 2px;
+}
+.ratings {
+    position: relative;
+    vertical-align: middle;
+    display: inline-block;
+    color: #b1b1b1;
+    overflow: hidden;
+}
+.full-stars{
+    position: absolute;
+    left: 0;
+    top: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    color: orange;
+}
+.empty-stars:before,
+.full-stars:before {
+    content: "\2605\2605\2605\2605\2605";
+    font-size: 15pt;
+}
+footer {
+    text-align: center;
+    padding: 100px 20px;
+    opacity: .5;
+    background: rgba(255, 255, 255, 0.17);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(6.6px);
+    -webkit-backdrop-filter: blur(6.6px);
+}
+.gallery-title {
+    color: orange;
+    text-align: center;
+}
+.slideshowContainer {
+    position: relative;
+    overflow: hidden;
+    margin: 75px auto;
+    width: 90%;
+    height: 500px;
+    border-radius: 16px
+  }
+  
+  .imageSlides {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: -1;
+  }
+  
+  /* add 'visible' class via Javascript */
+  .visible {
+    opacity: 1;
+  }
+  
+  .slideshowArrow {
+    font-size: 7em;
+    color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+    transition: opacity 0.2s ease-in-out;
+  }
+  
+  .slideshowArrow:hover {
+    opacity: 0.75;
+  }
+  
+  #leftArrow {
+    position: absolute;
+    left: 4%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+  }
+  
+  #rightArrow {
+    position: absolute;
+    right: 4%;
+    top: 50%;
+    transform: translate(50%, -50%);
+  }
+  
+  .slideshowCircles {
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    width: 100%;
+  }
+  .slideshowCircles p {
+    margin: 0;
+  }
+  .circle {
+    display: inline-block;
+    margin-left: 3px;
+    margin-right: 3px;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    border: solid 2px rgba(255, 255, 255, 0.5);
+    transition: 1s ease-in-out;
+  }
+  
+  .dot {
+    background-color: rgba(255, 255, 255, 0.7);
+    border: solid 2px rgba(255, 255, 255, 0.5);
+  }

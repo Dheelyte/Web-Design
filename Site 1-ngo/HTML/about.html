@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/about.css">
+    <link rel="icon" href="../Photos/leaf.webp">
+    <title>About Us</title>
+</head>
+<body>
+    <nav class="nav hide">
+        <span class="close">&#10006;</span>
+        <ul>
+            <a class="hover" href="">HOME</a>
+            <a href="about.html">ABOUT US</a>
+            <a href="about.html">SERVICES</a>
+            <a href="contact.html">CONTACT</a>
+        </ul>
+    </nav>
+    <div class="background">
+        <div class="header">
+            <div class="logo">
+                <img src="../Photos/leaf.png" alt="">
+                <a href="index.html">MAKE A CHANGE</a>
+            </div>
+            <ul>
+                <span class="menu">&#8801</span>
+                <a href="about.html" class="active" href="">HOME</a>
+                <a href="about.html">ABOUT US</a>
+                <a href="about.html">SERVICES</a>
+                <a href="contact.html">CONTACT</a>
+            </ul>
+        </div>
+        <div class="body">
+            <h1>About Us</h1>
+        </div>
+    </div>
+    <div class="section-5">
+        <h1>Our Impact</h1>
+        <div class="row">
+            <div class="card card-1">
+                <h2>Trees planted</h2>
+                <p>9347</p>
+            </div>
+            <div class="card card-2">
+                <h2>Our Volunteers</h2>
+                <p>370</p>
+            </div>
+            <div class="card card-3">
+                <h2>Countries impacted</h2>
+                <p>54</p>
+            </div>
+            <div class="card card-4">
+                <h2>People impacted</h2>
+                <p>99</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="section-3">
+        <h1>Push your Limits</h1>
+        <p>It's not wise to violate rules until you know how to observe them</p>
+        <a href="" class="cta">MAKE A CHANGE</a>
+    </div>
+    
+    <footer>
+        <table>
+            <tr>
+                <th>COMPANY</th>
+                <th>ABOUT</th>
+                <th>FOLLOW US</th>
+            </tr>
+            <tr>
+                <td>Our Vision</td>
+                <td>Donate</td>
+                <td>Twitter</td>
+            </tr>
+            <tr>
+                <td>The Team</td>
+                <td>About Us</td>
+                <td>Facebook</td>
+                
+            </tr>
+            <tr>
+                <td>Awards</td>
+                <td>Our mission</td>
+                <td>Instagram</td>
+            </tr>
+        </table>
+        <p>Website Designed by <a href="twitter.com/DelightGbolahan">Olu-Olagbuji Delight</a></p>
+    </footer>
+    <script>
+        const menu = document.querySelector('.menu')
+        const nav = document.querySelector('.nav')
+        const close = document.querySelector('.close')
+        menu.addEventListener("click", ()=>{
+            nav.classList.remove('hide')
+        })
+        close.addEventListener("click", ()=>{
+            nav.classList.add('hide')
+        })
+    </script>
+</body>
+</html>

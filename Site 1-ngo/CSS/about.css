@@ -1,0 +1,331 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav {
+    position: fixed;
+    width: 250px;
+    background-color: #000;
+    height: 100vh;
+    right: 0;
+    z-index: 1;
+}
+.hide {
+    visibility: hidden;
+}
+nav ul {
+    margin: 70px 0 16px;
+    list-style-type: none;
+}
+nav span {
+    color: #fff;
+    float: right;
+    margin: 20px;
+    font-size: 30px;
+    cursor: pointer;
+}
+@media screen and (min-width: 768px) {
+    .header span {
+        display: none;
+    }
+}
+nav a {
+    padding: 20px;
+    border-top-left-radius: 50px;
+    border-bottom-left-radius: 50px;
+    cursor: pointer;
+    color: #fff;
+    text-decoration: none;
+    display: block;
+}
+.hover {
+    background-color: #fff;
+    color: #000;
+}
+nav a:hover {
+    background-color: #fff;
+    color: #000;
+}
+@media screen and (max-width: 767px) {
+    .header ul a {
+        display: none;
+    }
+}
+.background {
+    position: relative;
+    background: rgba(0,0,0,0.5) url('../Photos/about.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    color: #fff;
+    width: 100%;
+    height: 70vh
+}
+.background .header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 70px;
+}
+@media screen and (max-width: 1024px) {
+    .background .header {
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 30px 20px 0px;
+    }
+}
+.background .header .logo {
+    display: flex;
+    font-weight: bold;
+}
+.background .header .logo a {
+    text-decoration: none;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+.background .header img {
+    width: 40px;
+    height: 40px;
+    margin: 10px 10px;
+}
+.background ul {
+    display: flex;
+    margin: 0;
+    list-style-type: none;
+}
+.background ul a {
+    padding: 15px 20px 10px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+.background .header span {
+    font-size: 50px;
+    float: right;
+}
+@media screen and (max-width: 768px) {
+    .background ul a {
+        padding: 10px 15px 5px;
+        font-weight: normal;
+    }
+}
+.active {
+    border-bottom: 5px solid #00ff00;
+}
+.background .body {
+    position: absolute;
+    right: 50%;
+    top: 50%;
+    transform: translate(50%, -50%);
+    text-align: center;
+    width: 100%;
+    margin-top: 20px;
+}
+.background .body h1 {
+    font-size: 100px;
+}
+.section-2 {
+    display: flex;
+    padding: 70px;
+    margin: auto;
+}
+.card {
+    margin: 30px;
+    border-radius: 30px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.card-text {
+    padding: 20px;
+}
+.section-2 h1 {
+    margin: 0;
+}
+.section-2 p {
+    font-size: 20px;
+}
+.img-container {
+    position: relative;
+    width: 100%;
+    padding-bottom: 70%;
+}
+.img-container img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+.section-3 {
+    position: relative;
+    background: rgba(0,0,0,0.5) url('../Photos/students.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: darken;
+    color: #fff;
+    width: 100%;
+    padding: 100px 0;
+    text-align: center
+}
+.section-3 h1 {
+    font-size: 70px;
+    margin-bottom: 20px;
+}
+.section-3 p {
+    font-size: 40px;
+    margin: 20px 40px 70px;
+}
+.cta {
+    text-decoration: none;
+    background-color: #00ff00;
+    color: #000;
+    padding: 20px 40px;
+    transition: all 0.5s ease 0s;
+    border-radius: 50px;
+    font-weight: bold;
+}
+.cta:hover {
+    background-color: #000;
+    color: #fff;
+}
+.section-4 {
+    padding: 70px 50px 120px;
+}
+.section-4 h1 {
+    font-size: 70px;
+    text-align: center;
+}
+.section-4 .row {
+    display: flex;
+}
+.sectaion-4 .card {
+    width: 50%;
+}
+.section-4 .card h2 {
+    margin: 0;
+    text-align: left;
+}
+@media screen and (max-width: 1023px) {
+    
+}
+.section-5 {
+    padding: 150px 50px;
+    max-width: 100%;
+}
+.section-5 h1 {
+    font-size: 70px;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 80px;
+}
+.section-5 .row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.section-5 .card {
+    width: calc(30% - 40px);
+    padding: 50px;
+    border-radius: 20px;
+    margin-right: 20px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.section-5 .card:last-child {
+    margin-right: 0;
+}
+@media screen and (max-width: 1023px) {
+    .section-5 .card {
+        padding: 30px;
+    }
+}
+@media screen and (max-width: 873px) {
+    .section-5 {
+        padding: 80px 25px;
+    }
+    .section-5 .row {
+        flex-wrap: wrap;
+    }
+    .section-5 .card {
+        margin-bottom: 20px;
+        width: calc(50% - 80px);
+    }
+    .section-5 .card:nth-child(2) {
+        margin-right: 0;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .section-5 h1 {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+}
+.section-5 .card h2 {
+    margin: 0;
+}
+.section-5 .card p {
+    font-size: 60px;
+    margin: 30px 0 0;
+    font-weight: bold;
+}
+@media screen and (max-width: 485px) {
+    .section-5 .card h2 {
+        font-size: 18px;
+    }
+    .section-5 .card p {
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 375px) {
+    .section-5 .card h2 {
+        font-size: 14px;
+    }
+    .section-5 .card {
+        width: calc(50% - 50px);
+        padding: 20px;
+    }
+}
+.section-5 .card-1 {
+    background-color: #6c63ff;
+    color: #fff;
+}
+.section-5 .card-2 {
+    background-color: #000;
+    color: #fff;
+}
+.section-5 .card-3 {
+    background-color: #00ff00;
+}
+.section-5 .card-4 {
+    background-color: #f80392;
+    color: #fff;
+}
+footer {
+    background-color: rgb(79, 79, 79);
+    color: #fff;
+    padding: 80px 80px 40px;
+}
+footer table {
+    width: 80%;
+    table-layout: fixed;
+    text-align: center;
+    justify-content: space-between;
+    letter-spacing: 1px;
+    margin: 0 auto;
+}
+footer table th {
+    padding-bottom: 30px;
+    color: #00ff00;
+}
+footer table td {
+    padding-bottom: 20px;
+}
+footer p {
+    text-align: center;
+    margin-top: 40px;
+}
+footer p a {
+    color: #fff;
+}

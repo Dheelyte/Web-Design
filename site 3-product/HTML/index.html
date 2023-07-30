@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/index.css">
+    <link rel="shortcut icon" href="../PHOTOS/logo.avif" type="image/x-icon">
+    <title>Product Landing Page</title>
+</head>
+<body>
+    <nav class="nav hide">
+        <span class="close">&#10006;</span>
+        <ul>
+            <a class="hover" href="index.html">HOME</a>
+            <a href="#features">FEATURES</a>
+            <a href="#faq">FAQs</a>
+            <a href="#reviews">REVIEWS</a>
+            <a href="#contact">CONTACT</a>
+        </ul>
+    </nav>
+    <div class="background">
+        <div class="header">
+            <div class="logo">
+                <img src="../PHOTOS/logo.avif" alt="">
+                <a href="index.html">EXPLORA</a>
+            </div>
+            <ul>
+                <span class="menu">&#8801</span>
+                <a href="index.html" class="active" href="">HOME</a>
+                <a href="#features">FEATURES</a>
+                <a href="#faq">FAQs</a>
+                <a href="#reviews">REVIEWS</a>
+                <a href="#contact">CONTACT</a>
+            </ul>
+        </div>
+        <div class="body">
+            <div class="row">
+                <h3>NEW ARRIVALS</h3>
+                <h1><span class="active">Minimalistic</span> furnitures for your home</h1>
+                <a href="cta" class="cta">Shop Now &#8594;</a>
+            </div>
+            <div class="row illustration">
+                <img src="../PHOTOS/hero-1.webp" alt="">
+            </div>
+        </div>
+    </div>
+    <div class="products">
+        <h1>BESTSELLERS</h1>
+        <div class="row">
+            <div class="card">
+                <div class="img">
+                    <img src="../PHOTOS/hero.png" alt="">
+                </div>
+                <p class="title">This is a product title</p>
+                <p class="price">$50.99</p>
+                <div class="cta-div">View</div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="../PHOTOS/chair-1.jpg" alt="">
+                </div>
+                <p class="title">This is a product title</p>
+                <p class="price">$50.99</p>
+                <div class="cta-div">View</div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="../PHOTOS/chair-2.jpg" alt="">
+                </div>
+                <p class="title">This is a product title</p>
+                <p class="price">$50.99</p>
+                <div class="cta-div">View</div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="../PHOTOS/chair-3.jpg" alt="">
+                </div>
+                <p class="title">This is a product title</p>
+                <p class="price">$50.99</p>
+                <div class="cta-div">View</div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="../PHOTOS/hero.png" alt="">
+                </div>
+                <p class="title">This is a product title</p>
+                <p class="price">$50.99</p>
+                <div class="cta-div">View</div>
+            </div>
+            <div class="card">
+                <div class="img">
+                    <img src="../PHOTOS/hero.png" alt="">
+                </div>
+                <p class="title">This is a product title</p>
+                <p class="price">$50.99</p>
+                <div class="cta-div">View</div>
+            </div>
+        </div>
+        
+    </div>
+    <div class="offer-card">
+        <div class="bg">
+            <h1>New arrivals</h1>
+            <p>Up to 30% off</p>
+            <a href="cta" class="cta">Shop Now &#8594;</a>
+        </div>
+    </div>
+
+
+    <script>
+        const menu = document.querySelector('.menu')
+        const nav = document.querySelector('.nav')
+        const close = document.querySelector('.close')
+        menu.addEventListener("click", ()=>{
+            nav.classList.remove('hide')
+        })
+        close.addEventListener("click", ()=>{
+            nav.classList.add('hide')
+        })
+
+    </script>
+</body>
+</html>
